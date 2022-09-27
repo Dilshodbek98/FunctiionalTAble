@@ -2,15 +2,18 @@ import styled from "styled-components";
 
 export const Main = styled.div`
   width: 100%;
+  display: flex;
+  justify-content: center;
 `
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 95%;
-  margin: auto;
+  width: 100%;
+  max-width: 1440px;
   .header {
     position: sticky;
+    width: 100%;
     top: 0;
     background-color: #fff;
     padding: 20px 0;
@@ -67,7 +70,7 @@ export const Container = styled.div`
     margin-bottom: 20px;
     width: 100%;
   }
-  tr{
+  tr {
     height: 60px;
   }
   th {
@@ -76,13 +79,13 @@ export const Container = styled.div`
   tr:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.05);
   }
-  td{
+  td {
     padding-left: 16px;
     height: 100%;
     width: fit-content;
     overflow: hidden;
   }
-  .buttonss{
+  .buttonss {
     display: flex;
     width: auto;
     justify-content: center;
@@ -107,7 +110,7 @@ export const Container = styled.div`
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
-      input{
+      input {
         width: 400px;
         height: 40px;
         border-radius: 10px;
@@ -116,12 +119,12 @@ export const Container = styled.div`
         font-size: 16px;
         align-items: center;
         padding: 0 20px;
-        :focus{
+        :focus {
           outline: none;
         }
       }
     }
-    .buttons{
+    .buttons {
       width: 100%;
       display: flex;
       align-items: center;
@@ -129,7 +132,7 @@ export const Container = styled.div`
       gap: 30px;
     }
   }
-  .editeInput{
+  .editeInput {
     width: fit-content;
     height: 40px;
     padding: 0 10px;
@@ -137,11 +140,11 @@ export const Container = styled.div`
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.1);
-    :focus{
+    :focus {
       outline: none;
     }
   }
-  .age{
+  .age {
     width: 60px;
   }
 `;
@@ -163,4 +166,6 @@ export const Btn = styled.button`
   :active{
     transform: scale(0.98);
   }
+
+
 `;
